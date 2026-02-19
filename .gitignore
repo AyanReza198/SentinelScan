@@ -1,0 +1,17 @@
+# Ignore scan outputs
+data/
+logs/
+
+
+# Python cache
+__pycache__/
+*.pyc
+
+
+# Virtual environments
+venv/
+.env/
+
+
+# OS files
+.DS_Store
