@@ -2,6 +2,8 @@ import argparse
 import sys
 
 from sentinel_scan.core.scan_session import ScanSession
+from sentinel_scan.logging_config import setup_logging
+import logging
 
 
 def parse_arguments():
@@ -34,6 +36,10 @@ def parse_arguments():
 
 
 def main():
+
+    setup_logging()
+    logging.info("SentinelScan started.")
+    
     args = parse_arguments()
 
     try:
